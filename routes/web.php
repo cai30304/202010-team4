@@ -54,8 +54,7 @@ Route::prefix('cart_ecpay')->group(function(){
     Route::post('return', 'CartController@returnUrl')->name('return');
 });
 
-Auth::routes();
-Auth::route(['register'=>false]);
+Auth::routes(['register'=>false]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('admin')->middleware(['auth'])->group(function () {
