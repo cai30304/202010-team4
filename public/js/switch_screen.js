@@ -1,7 +1,7 @@
 AOS.init();
 
 window.onload = function () {
-    lax.setup(
+    lax.init(
 
     ) // init
 
